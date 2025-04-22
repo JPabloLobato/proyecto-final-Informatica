@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Gestión de Cargadores</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="header">
+    <h1 class="Gestion">Gestión de Servidores</h1>
+</div>
+<div class="cuadrosinformativos">
+    <div class="cuadro numCargadores">
+        <h3>Número de Cargadores</h3>
+        <p id="numCargadores">0</p>
+    </div>
+    <div class="cuadro cargadoresDisponibles">
+        <h3>Cargadores Disponibles</h3>
+        <p id="cargadoresDisponibles">0</p>
+    </div>
+    <div class="cuadro cargadoresMantenimiento">
+        <h3>Cargadores en Mantenimiento</h3>
+        <p id="cargadoresMantenimiento">0</p>
+    </div>
+</div>
+<div class="anadirCargadores">
+    <h2>Añadir Cargador</h2>
+    <form action="#">
+        <label for="ID"></label>
+        <input type="number" id="ID" name="ID" placeholder="ID" required>
+        <label for="localizacion"></label>
+        <input type="text" id="localizacion" name="localizacion" placeholder="localizacion" required>
+        <label for="tipo"></label>
+        <select type="text" id="tipo" name="tipo" placeholder="Tipo de Cargador" required>
+            <option value="" disabled selected>Seleccionar Tipo de Cargador</option>
+            <option value="Lento">Lento</option>
+            <option value="Semirapido">Semi-rápido</option>
+            <option value="Rapido">Rápido</option>
+            <option value="Supercharger">Super-charger</option>
+        </select>
+        <label for="potencia"></label>
+        <input type="number" id="potencia" name="potencia" placeholder="Potencia" required>
+        <span>W</span>
+        <label for="estado"></label>
+        <select type="text" id="estado" name="estado" placeholder="Estado" required>
+            <option value="" disabled selected>Seleccionar Tipo de Cargador</option>
+            <option value="Disponible">Disponible</option>
+            <option value="Ocupado">Ocupado</option>
+            <option value="Mantenimiento">Mantenimiento</option>
+        </select>
+        <button type="submit">Añadir Cliente</button>
+    </form>
+</div>
+<div class="tablaCargadores">
+    <h2>Lista de Cargadores</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>ID</th>
+            <th>Localización</th>
+            <th>Tipo</th>
+            <th>Potencia</th>
+            <th>Estado</th>
+            <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody id="cargadoresTableBody">
+        <!-- Las filas de cargadores se insertarán aquí -->
+        </tbody>
+    </table>
+</div>
+</body>
+<script src="index.js"></script>
+</html>

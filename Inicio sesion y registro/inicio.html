@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inicio Sesión</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form class="container">
+        <h1 class="inicio-sesion-title">Inicio Sesión</h1>
+
+        <section class="input-box">
+            <input type="text" name="username" placeholder="Usuario">
+
+        </section>
+
+        <section class="input-box">
+            <input type="password" name="password" placeholder="Contraseña">
+
+        </section>
+
+        <section class="remember-forgot-box">
+            <div class="remember-me">
+                <input type="checkbox" name="remember-me" id="remember-me">
+                <label for="remember-me"> <h5>Recordarme</h5></label>
+            </div>
+            <a class="contrasena-olvidada" href="#">
+                <h5><b>¿Olvidaste tu contraseña?</b></h5>
+            </a>
+        </section>
+
+        <button class="loggin-btn" type="submit">
+            Iniciar Sesión
+        </button>
+
+        <h5 class="no-tienes-cuenta">
+            ¿No tienes una cuenta?
+            <a href="#"><b></b>Registrar</b></a>
+        </h5>
+    </form>
+<script src="client.js"></script>
+</body>
+</html>
