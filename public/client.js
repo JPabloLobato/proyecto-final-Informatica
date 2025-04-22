@@ -1,19 +1,19 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Para la página de registro
-    const loginLink = document.querySelector('.no-tienes-cuenta a');
-    if (loginLink && loginLink.textContent.includes('Iniciar Sesión')) {
+    // Enlace para redirigir a la página de inicio de sesión
+    const loginLink = document.querySelector('.no-tienes-cuenta a.login');
+    if (loginLink) {
         loginLink.addEventListener('click', (e) => {
             e.preventDefault();
-            window.location.href = 'inicio.html';
+            window.location.href = 'inicio.html'; // Redirige a inicio.html
         });
     }
 
-    // Para la página de inicio de sesión
-    const registerLink = document.querySelector('.no-tienes-cuenta a');
-    if (registerLink && registerLink.textContent.includes('Registrar')) {
+    // Enlace para redirigir a la página de registro
+    const registerLink = document.querySelector('.no-tienes-cuenta a.register');
+    if (registerLink) {
         registerLink.addEventListener('click', (e) => {
             e.preventDefault();
-            window.location.href = 'registro.html';
+            window.location.href = 'registro.html'; // Redirige a registro.html
         });
     }
 
